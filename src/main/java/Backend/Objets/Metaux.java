@@ -8,6 +8,17 @@ public final class Metaux extends Objet implements Descriptible {
     private String symbole;
     private double pointFusion;
 
+    /** Constructeur Comics
+     * @param type Le type de l'objet
+     * @param nom Le nom de l'objet
+     * @param prix Le prix de l'objet
+     * @param destination La destination
+     * @param emplacement L'emplacement
+     * @param rarete Le niveau de rarete
+     * @param symbole Le nom du symbole
+     * @param pointFusion le point de fusion
+     */
+
     public Metaux(Types type,String nom, double prix, String destination, String emplacement, int rarete, String symbole, int pointFusion) {
         super(type,nom, prix, destination, emplacement);
         this.rarete = rarete;

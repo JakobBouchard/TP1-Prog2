@@ -7,12 +7,12 @@ public class VerificationPlanete extends VerificationObjets {
      *
      * @param nom le nom ne doit pas être null ou vide
      * @param prix le prix doit être supérieur à zéro
-     * @param emplacement
-     * @param lune
-     * @param masse
-     * @param anneaux
-     * @param visitee
-     * @return
+     * @param emplacement l'emplacement de l'objet
+     * @param lune le nb de lunes doit être supérieur à zero
+     * @param masse masse doit être supérieur à zero
+     * @param anneaux ne peux pas être null
+     * @param visitee ne peux pas être null
+     * @return Les strings des messages d'erreurs
      **/
     public String verificationPlanete(String nom, String prix, String emplacement, String lune, String masse, Boolean anneaux, Boolean visitee) {
         return String.format("%s%s \n %s \n %s \n %s", sommaireVerifObjet(nom, prix, emplacement), verificationNbLune(lune), verificationMasse(masse), verificationAnneaux(anneaux), verificationVisitee(visitee));

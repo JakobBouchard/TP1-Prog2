@@ -8,7 +8,15 @@ public final class Comics extends Objet implements Descriptible {
     private String dessinateur;
     private String hero;
 
-
+    /** Constructeur Comics
+     * @param type Le type de l'objet
+     * @param nom Le nom de l'objet
+     * @param prix Le prix de l'objet
+     * @param destination La destination
+     * @param emplacement L'emplacement
+     * @param dessinateur Le dessinateur
+     * @param hero Le nom de l'héro
+     */
     public Comics(Types type, String nom, double prix, String destination, String emplacement, String dessinateur, String hero) {
         super(type, nom, prix, destination, emplacement);
         this.dessinateur = dessinateur;

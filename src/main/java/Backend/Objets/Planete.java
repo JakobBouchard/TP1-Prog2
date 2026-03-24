@@ -9,6 +9,18 @@ public final class Planete extends Objet implements Descriptible {
     private Boolean anneaux;
     private Boolean visitee;
 
+    /** Constructeur Comics
+     * @param type Le type de l'objet
+     * @param nom Le nom de l'objet
+     * @param prix Le prix de l'objet
+     * @param destination La destination
+     * @param emplacement L'emplacement
+     * @param masse La masse de la planète
+     * @param anneaux oui ou non
+     * @param nbLunes le nombre de lunes
+     * @param visitee visiter ou non
+     */
+
     public Planete(Types type,String nom, double prix, String destination, String emplacement, int nbLunes, double masse, Boolean anneaux, Boolean visitee) {
         super(type, nom, prix, destination, emplacement);
         this.nbLunes = nbLunes;

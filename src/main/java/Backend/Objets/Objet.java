@@ -15,6 +15,14 @@ public abstract class Objet implements Serializable {
     private String emplacement;
 
     //Constructeur
+
+    /** Constructeur Comics
+     * @param type Le type de l'objet
+     * @param nom Le nom de l'objet
+     * @param prix Le prix de l'objet
+     * @param destination La destination
+     * @param emplacement L'emplacement
+     */
     public Objet(Types type,String nom, double prix, String destination, String emplacement) {
         this.type = type;
         this.nom = nom;

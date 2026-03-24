@@ -2,6 +2,8 @@ package Backend.Objets;
 
 import java.time.LocalDate;
 
+/** Constructeur Inventaire **/
+
 public final class Inventaire {
     private Objet[] inventaire;
 

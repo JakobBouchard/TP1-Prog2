@@ -2,6 +2,16 @@ package Backend.Verification;
 
 public class VerificationMetaux extends VerificationObjets{
 
+    /** Verfication des champs Metaux
+     *
+     * @param nom le nom ne doit pas être null ou vide
+     * @param prix le prix doit être supérieur à zéro
+     * @param emplacement l'emplacement de l'objet
+     * @param rarete le nb de lunes doit être supérieur à zero
+     * @param symbole symbole ne peut pas être null
+     * @param pointFusion ne peux pas être inferieur a 30
+     * @return Les strings des messages d'erreurs
+     **/
     public String verificationMetaux(String nom, String prix, String emplacement, String rarete, String symbole, String pointFusion) {
         return String.format("%s%s \n %s \n %s \n", sommaireVerifObjet(nom, prix, emplacement), verificationRarete(rarete), verificationSymbole(symbole), verificationPointFusion(pointFusion));
     }

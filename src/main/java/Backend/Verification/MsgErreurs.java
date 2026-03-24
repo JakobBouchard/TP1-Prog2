@@ -1,5 +1,6 @@
 package Backend.Verification;
 
+/** Les messages d'erreurs **/
 public enum MsgErreurs {
     MSGNOM("Le champ nom ne peut pas être vide."),
     MSGPRIX("Le champ prix ne peut pas être inférieur ou égal à zéro."),
