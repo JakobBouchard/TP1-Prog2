@@ -2,6 +2,18 @@ package Backend.Verification;
 
 public class VerificationPlanete extends VerificationObjets {
 
+
+    /** Verfication des champs planete
+     *
+     * @param nom le nom ne doit pas être null ou vide
+     * @param prix le prix doit être supérieur à zéro
+     * @param emplacement
+     * @param lune
+     * @param masse
+     * @param anneaux
+     * @param visitee
+     * @return
+     **/
     public String verificationPlanete(String nom, String prix, String emplacement, String lune, String masse, Boolean anneaux, Boolean visitee) {
         return String.format("%s%s \n %s \n %s \n %s", sommaireVerifObjet(nom, prix, emplacement), verificationNbLune(lune), verificationMasse(masse), verificationAnneaux(anneaux), verificationVisitee(visitee));
     }
